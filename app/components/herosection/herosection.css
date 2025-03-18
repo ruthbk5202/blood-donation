@@ -1,24 +1,66 @@
-.hero-section-grid{
-      display: flex;
-      flex-direction: row;
-      grid-template-columns: 1fr 1fr;
-      width:100%;
-      height:100%;
-      justify-content: space-between;
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  padding-left: 132px;
 }
-.description-section{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
 }
-.btn-description-section button{
-    display: flex;
-    flex-direction: row;
-  
-    background-color: #a73d07;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    gap:10px;
-    cursor: pointer;
+
+.content-section h6 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.content-section h6 span {
+  color: #ff4d4d;
+}
+
+.content-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.btn-section {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-section button {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 24px;
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap: 8px;
+}
+
+.btn-section button:hover {
+  background-color: #e63939;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-section img {
+  max-width: 100%;
 }

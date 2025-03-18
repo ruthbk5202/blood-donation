@@ -1,0 +1,68 @@
+/* whyhlb.css */
+
+.grid-hlb {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: center; 
+    padding: 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.svg-hlb img {
+    width: 100%; 
+    height: auto; 
+ 
+}
+
+.why-hlb,
+.what-we-do {
+    padding: 1rem;
+}
+
+.why-hlb h1,
+.what-we-do h1 {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-bottom: 1rem; 
+}
+
+.why-hlb p,
+.what-we-do p {
+    font-size: 1.1rem; 
+    color: #555;
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+
+.what-we-do {
+    grid-column: span 1;
+    text-align: center;
+  
+    padding: 2rem; 
+   
+}
+
+
+@media (max-width: 768px) {
+    .grid-hlb {
+        grid-template-columns: 1fr; 
+        padding: 1rem; 
+    }
+
+    .why-hlb h1,
+    .what-we-do h1 {
+        font-size: 2rem; 
+    }
+
+    .why-hlb p,
+    .what-we-do p {
+        font-size: 1rem; 
+    }
+
+    .what-we-do {
+        grid-column: span 1;
+    }
+}

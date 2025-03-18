@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #a73d07;
+  background-color: #CF3D3C;
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -14,31 +14,114 @@
 .drop-down {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
 }
-.aboutus{
+
+.about-us{
     display: flex;
     flex-direction: row;
 }
-.denote-btn {
-  background-color: #f0f6ea;
-  width: 94px;
+.about-us a:hover{
+  color:#333;
+  transition: color 0.3s ease;
+}
+.donate-btn{
+  background-color: white;
+  width: 120px;
   height: 32px;
-  border-radius: 8px;
+  border-radius: 16px;
+  border: 2px solid white;
   font-size: 12px;
-  color: black;
+  color:black;
+  
 }
 .request-btn {
-  background-color: #a73d07;
-  width: 94px;
-  height: 32px;
-  border-radius: 8px;
+  background-color: #CF3D3C;
+ width: 120px;
+  height:32px;
+  border-radius: 16px;
   border: 2px solid white;
   font-size: 12px;
   color: black;
 }
+
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.drop-down {
+  display: flex;
+ 
+ gap: 32px;
+}
+
+
+
+.dropdown-item {
+  position: relative; /* Make the dropdown-item a positioning context */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the parent */
+  left: 0;
+  background-color:#CF3D3C;
+  border: 1px solid #CF3D3C;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color:aliceblue;
+  display: block; /* Ensure the links take up full width */
+}
+
+
+
 .btn-group {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 1rem;
+  width: auto;
+  height: auto;
+}
+.stories {
+  display: flex;
+  flex-direction: row;
+ 
+}
+.stories :hover{
+  color: #333;
+  transition: color 0.3s ease;
+}
+.resource{
+  display: flex;
+  flex-direction: row;
+  
+ 
+}
+.resource :hover{
+  color: #333;
+  transition: color 0.3s ease;
 }

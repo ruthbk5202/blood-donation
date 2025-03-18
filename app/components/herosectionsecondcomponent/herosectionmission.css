@@ -1,0 +1,39 @@
+.hero-section-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    
+    align-items: center; 
+   
+  }
+  
+  .content-section-second {
+    
+    background-color: antiquewhite;
+    height: auto; 
+  }
+  
+  .video-section {
+    display: flex;
+    justify-content: flex-end;
+   
+  }
+  
+  video {
+    max-width: auto; 
+    height: auto;
+  }
+  
+  
+  h6 {
+    font-size: 1.5rem;
+  
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  
+  }
+  
+  span {
+    color: #ff6347; }
