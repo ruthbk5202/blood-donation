@@ -1,0 +1,140 @@
+
+.donate-blood-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 32px;
+  padding: 20px;
+}
+
+.denote-blood-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cf3d3c;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(71, 67, 67, 0.933);
+  padding: 20px;
+  width: 100%;
+  border: 16px solid rgb(245, 242, 242); 
+  
+}
+
+.denote-blood-form-loop-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  background-color: #ccc;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+
+}
+
+
+.form-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.form-details h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.form-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.form-section legend {
+  font-weight: bold;
+  color: #555;
+  padding: 0 10px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  width: 100%; 
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.submit-button {
+padding: 12px 20px; 
+  background-color: #cf3d3c;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background-color: #ccc;
+}
+.img-hamro-life{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  background-color: white;
+  appearance: none; 
+}
+
+.form-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

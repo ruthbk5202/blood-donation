@@ -1,11 +1,20 @@
+"use client";
 import React, { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
+
 import "./nav.css";
+import { useRouter } from "next/navigation";
 
 const Nav = () => {
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [resourceDropdown, setResourceDropdown] = useState(false);
-
+ const router= useRouter();
+ const handleNavigateToDonate=()=>{
+  router.push('/donateBlood');
+ }
+ const handleNavigateToRequestBlood=()=>{
+  router.push('/requestBloodForm');
+ }
 
   return (
     <nav className="navbar">
@@ -38,7 +47,7 @@ const Nav = () => {
               </ul>
             )}
           </div>
-
+        
           <div 
             className="dropdown-item" 
             onMouseEnter={() => setResourceDropdown(true)}
@@ -66,7 +75,7 @@ const Nav = () => {
            
           >
             <div className="stories">
-              <a href="/">Stories </a>
+              <a href="/bloodstories">Stories </a>
             
             </div>
            
@@ -74,8 +83,8 @@ const Nav = () => {
         
 
         <div className="btn-group">
-          <button className="donate-btn">Donate Blood</button>
-          <button className="request-btn">Request Blood</button>
+          <button className="donate-btn" onClick={handleNavigateToDonate}>Donate Blood</button>
+          <button className="request-btn" onClick={handleNavigateToRequestBlood} >Request Blood</button>
         </div>
     </div>
     </div>
