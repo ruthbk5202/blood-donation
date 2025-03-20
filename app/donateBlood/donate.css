@@ -1,6 +1,7 @@
 
 .donate-blood-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -137,4 +138,71 @@ form {
 .form-group select:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+nav{
+  background-color: #cf3d3c;
+  width: 100%;
+  height: 400px;
+  border-bottom-left-radius:2rem;
+  border-bottom-right-radius:2rem;
+  
+}
+nav h6{
+  display:flex;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  padding-top:32px ;
+
+}
+/* upcoming.css */
+
+.upcoming-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center the text */
+ 
+  padding: 2rem; /* Add some padding */
+ /* Light background color */
+}
+
+.upcoming-description p {
+  font-size: 1.2rem; /* Slightly larger font size for the paragraph */
+  color: #555; /* Medium color for the text */
+  max-width: 600px; /* Limit the width for better readability */
+  margin-bottom: 2rem; /* Space below the paragraph */
+  line-height: 1.6; /* Improve readability with line height */
+}
+
+.upcomming-btn {
+  background: linear-gradient(45deg, #e63946, #f4a261); /* Gradient background (red to orange) */
+  color: white; /* White text color */
+  padding: 0.75rem 1.5rem; /* Padding inside the button */
+  font-size: 1rem; /* Font size for the button text */
+  border: none; /* Remove the default border */
+  border-radius: 25px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.upcomming-btn:hover {
+  background: linear-gradient(45deg, #d62828, #e76f51); /* Darker gradient on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .upcoming-description p {
+      font-size: 1rem; /* Smaller font size for smaller screens */
+      padding: 0 1rem; /* Add padding to the sides */
+  }
+
+  .upcomming-btn {
+      font-size: 0.9rem; /* Smaller font size for the button */
+      padding: 0.5rem 1rem; /* Smaller padding for the button */
+  }
 }

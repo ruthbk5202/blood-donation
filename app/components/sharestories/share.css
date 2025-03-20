@@ -1,0 +1,88 @@
+.share-stories-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+   
+
+}
+.share-stories-description{
+    display: flex;
+    flex-direction: column;
+  
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+/* share.css */
+
+.share-stories-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    gap: 2rem; /* Space between the description and the image */
+    padding: 2rem; /* Add some padding around the container */
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container on the page */
+}
+
+.share-stories-description {
+    text-align: center; /* Center the text inside the description */
+    max-width: 600px; /* Limit the width of the description for better readability */
+}
+
+.share-stories-description h1 {
+    font-size: 2.5rem; /* Large font size for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+.share-stories-description span {
+    font-size: 1.2rem; /* Slightly larger font size for the span */
+    color: #555; /* Medium color for the span */
+    display: block; /* Make the span a block element */
+    margin-bottom: 1rem; /* Space below the span */
+}
+
+.share-stories-description p {
+    font-size: 1rem; /* Regular font size for the paragraph */
+    color: #666; /* Light color for the paragraph */
+    margin-bottom: 2rem; /* Space below the paragraph */
+}
+
+.share-your-story-btn {
+    background-color: #e63946; /* Red background color for the button */
+    color: white; /* White text color */
+    padding: 0.75rem 1.5rem; /* Padding inside the button */
+    font-size: 1rem; /* Font size for the button text */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.share-your-story-btn:hover {
+    background-color: #d62828; /* Darker red on hover */
+}
+
+.svg-box img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .share-stories-container {
+        flex-direction: column; /* Stack the description and image vertically */
+        text-align: center; /* Center the text */
+    }
+
+    .share-stories-description {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .svg-box {
+        margin-top: 2rem; /* Add space between the description and image */
+    }
+}
+
+

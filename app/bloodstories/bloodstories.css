@@ -6,7 +6,7 @@
 }
 .grid-image-stories{
     width:100%;
-    height:180px;
+    height:100%;
     object-fit:cover;
     
 }
@@ -15,4 +15,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 32px;
+}
+.blood-stories-nav{
+    background-color: #CF3D3C;
+    width:100%;
+    height: 300px;
+}
+.blood-stories-nav h2{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 32px;
+    font-size: 32px;
+    font-weight:bold ;
+    font-family: sans-serif;
 }

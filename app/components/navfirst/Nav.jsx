@@ -41,7 +41,7 @@ const Nav = () => {
                 <li><a href="/">Team</a></li>
                 <li><a href="/">BOD</a></li>
                 <li><a href="/">media</a></li>
-                <li><a href="/">Blogs</a></li>
+                <li><a href="/">Blogs</a></li> 
                 <li><a href="/">Events</a></li>
                 <li><a href="/">Newsletters</a></li>
               </ul>

@@ -1,0 +1,22 @@
+.upcoming-events-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+     margin:32px;
+   
+}
+.map-div{
+    border: 1px solid #ccc;
+
+}
+.map-div img{
+    width:100%;
+}
+.description-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 20px;
+}
