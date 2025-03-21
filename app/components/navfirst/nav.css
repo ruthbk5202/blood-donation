@@ -61,22 +61,26 @@
   text-decoration: none;
   color: #333;
 }
+.navbar-logo img{
+  width: 62px;
+  height:52px;
+}
 
 .drop-down {
   display: flex;
  
- gap: 32px;
+ gap: 65px;
 }
 
 
 
 .dropdown-item {
-  position: relative; /* Make the dropdown-item a positioning context */
+  position: relative; 
 }
 
 .dropdown-menu {
   position: absolute;
-  top: 100%; /* Position the dropdown below the parent */
+  top: 100%; 
   left: 0;
   background-color:#CF3D3C;
   border: 1px solid #CF3D3C;
@@ -85,7 +89,7 @@
   margin: 0;
   
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .dropdown-menu li {
@@ -95,7 +99,7 @@
 .dropdown-menu li a {
   text-decoration: none;
   color:aliceblue;
-  display: block; /* Ensure the links take up full width */
+  display: block; 
 }
 
 

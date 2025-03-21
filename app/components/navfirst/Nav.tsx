@@ -4,6 +4,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 import "./nav.css";
 import { useRouter } from "next/navigation";
+import  Link from "next/link";
 
 const Nav = () => {
   const [aboutDropdown, setAboutDropdown] = useState(false);
@@ -20,7 +21,10 @@ const Nav = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <a href="/">MyLogo</a>
+         
+          <a href="/">
+          <img src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/esatya/hlb-navbar-logo.png" ></img>
+          </a>
         </div>
 
         <div className="drop-down">
@@ -54,7 +58,9 @@ const Nav = () => {
             onMouseLeave={() => setResourceDropdown(false)}
           >
             <div className="resource">
+             
               <a href="/">resources</a>
+             
               <RiArrowDropDownLine className="dropdown-icon"  />
             </div>
             {resourceDropdown && (
@@ -75,6 +81,7 @@ const Nav = () => {
            
           >
             <div className="stories">
+              
               <a href="/bloodstories">Stories </a>
             
             </div>
@@ -83,9 +90,13 @@ const Nav = () => {
         
 
         <div className="btn-group">
+        
           <button className="donate-btn" onClick={handleNavigateToDonate}>Donate Blood</button>
+        
           <button className="request-btn" onClick={handleNavigateToRequestBlood} >Request Blood</button>
+         
         </div>
+       
     </div>
     </div>
     </nav>
