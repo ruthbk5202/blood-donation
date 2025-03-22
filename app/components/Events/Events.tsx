@@ -47,7 +47,7 @@ const Events = () => {
 
         </div>
         <div className="form-details">
-           <h3>fill out the form and send us your details</h3>
+           <h3>Fill out the form and send us your details</h3>
            <p>someone will get back to you asap. If it's emergency,</p>
            <p>Call us  @+977 9807654321 or message us at Facebook</p>
             <div className='btn-div'>

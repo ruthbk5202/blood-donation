@@ -1,10 +1,16 @@
+.upcoming-donation-event{
+    display:flex;
+    flex-direction: column;
+    margin:32px;
+}
 .upcoming-events-div{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    gap: 24px;
     justify-content: center;
     align-items: center;
-     margin:32px;
+    border-radius: 2px;
+    
    
 }
 .map-div{
@@ -19,4 +25,173 @@
     flex-direction: column;
     justify-content: start;
     padding-left: 20px;
+    margin: 8px;
 }
+.upcoming-event-nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+   margin-bottom:16px;
+    
+}
+.upcoming-event-nav h6{
+    color:#CF3D3C;
+    font-weight: bold;
+    font-size: 32px;
+}
+/* .show-my-location-and-country-btn  button{
+    display: flex;
+    flex-direction: row;
+    color:white;
+   gap:2px;
+  width:fit-content;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right:20px;
+} */
+
+.show-my-location-and-country-btn  button{
+  color: white;
+  gap:16px;
+  border-radius: 4px;
+  margin-right: 32px; 
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top:8px ;
+    padding-bottom: 8px;
+
+}
+.input-searchbar input{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 364px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+   margin-right:38px;
+
+}
+.input-searchbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-top: 32px;
+}
+.location-search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    font-size: 24px;
+
+}
+.cant-find-nearby-event{
+   display:flex;
+    height: 224px;
+    align-items: center;
+    justify-content: center;
+  margin-top:32px ;
+  width:100%;
+  background-color: #CF3D3C;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  padding: 10px;
+
+}
+.sign-up-to-donate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap:32px;
+    
+}
+.sign-up-to-donate button{
+    width:fit-content;
+    padding:10px;
+    background-color: #F68732;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.sign-up-to-donate h1{
+    font-weight: bold;
+    font-size: 24px;
+}
+ .bsdash{
+    color:#F68732;
+    width:24px;
+ 
+   font-size:32px;
+} 
+.form-details-upcoming h3{
+    font-size: 18px;
+  }
+  .req-btn-upcoming{
+    
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-div-upcoming{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+ .request-blood-btn-upcoming{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #1a1616;
+  border-radius: 24px;
+
+  width:fit-content;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap: 8px;
+ }
+ .denote-blood-btn-upcoming{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  width:fit-content;
+  border-radius: 24px;
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap: 8px;
+ }
+ .fill-form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  .form-details-upcomming{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 0.5rem;
+    justify-content:end;
+    align-items: end;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-right: 64px;
+  }
