@@ -1,0 +1,101 @@
+.blood-basics-container {
+    width: 846px;
+    margin: 64px auto; /* Center the container */
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.blood-basics-container div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 16px; /* Standardized margin */
+}
+
+.blood-basics-container h1 {
+    color: #CF3D36;
+    font-size: 18px;
+    margin-bottom: 16px; /* Standardized margin */
+}
+
+.blood-basics-container img {
+    width: 816px;
+    height: 454.96px;
+    margin-bottom: 32px; /* Standardized margin */
+}
+
+.blood-basics-container p {
+    color: #888888;
+    font-size: 16px;
+    margin-bottom: 16px; /* Standardized margin */
+}
+
+.blood-basics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eligible h1, .not-eligible h1 {
+    color: #1A1A1A;
+    font-size: 16px;
+    margin-bottom: 16px; /* Standardized margin */
+}
+
+.blood-basics-container ul {
+    color: #888888;
+    list-style-type: disc;
+    padding-left: 32px;
+    margin-bottom: 16px; /* Standardized margin */
+}
+
+.not-eligible p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px; /* Standardized margin */
+}
+
+.about-blood {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-blood h1 {
+    color: #CF3D36;
+    font-size: 24px;
+    margin-bottom: 16px; /* Standardized margin */
+}
+
+.plasma h1, .group-description h1 {
+    color: #CF3D36;
+    margin-bottom: 32px; /* Standardized margin */
+}
+
+/* Additional styles for the table */
+.blood-basics-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px; /* Standardized margin */
+}
+
+.blood-basics-container th, .blood-basics-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.blood-basics-container th {
+    background-color: #f2f2f2;
+    color: #1A1A1A;
+}
+
+.blood-basics-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.blood-basics-container tr:hover {
+    background-color: #f1f1f1;
+}

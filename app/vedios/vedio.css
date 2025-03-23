@@ -1,0 +1,39 @@
+.grid-map-vedio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px; /* Space between videos */
+    padding: 20px; /* Padding around the grid */
+    max-width: 1200px; /* Max width for the grid */
+    margin: 0 auto; /* Center the grid */
+  }
+  .nav-vedios{
+    background-color: #cf3d3c;
+    width: 100%;
+    height: 300px;
+  }
+
+.nav-vedios h1{
+    color: white;
+    text-align: center;
+    padding-top: 64px;
+    font-size: 32px;
+  
+}
+  .video-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .grid-map-vedio {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns per row on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-map-vedio {
+      grid-template-columns: 1fr; /* 1 column per row on mobile */
+    }
+  }

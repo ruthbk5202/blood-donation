@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f9f9f9;  */
+}
+
+.blood-bank-info-nav {
+    background-color: #CF3D36;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 400px;
+}
+
+.blood-bank-info-nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.blood-bank-info-nav svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+.major-blood-in-ktm,
+.major-blood-out-ktm {
+    text-align: center; 
+    margin: 32px 0; 
+}
+
+
+.major-blood-in-ktm button,
+.major-blood-out-ktm button {
+    background-color: #CF3D36;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block; 
+    height: 60px;
+}
+
+.major-blood-in-ktm button:hover,
+.major-blood-out-ktm button:hover {
+    background-color: #a8322c;
+}
+
+/* Card container styles */
+.blood-bank-info-card,
+.blood-bank-info-card-outside-ktm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the grid */
+    max-width: 1200px; /* Max width for the grid */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Individual card styles */
+.list,
+.list-outside-ktm {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.list h2,
+.list-outside-ktm h2 {
+    color: #CF3D36;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.list p,
+.list-outside-ktm p {
+    color: #555;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .blood-bank-info-card,
+    .blood-bank-info-card-outside-ktm {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .blood-bank-info-card,
+    .blood-bank-info-card-outside-ktm {
+        grid-template-columns: 1fr; /* 1 column per row on mobile */
+    }
+}

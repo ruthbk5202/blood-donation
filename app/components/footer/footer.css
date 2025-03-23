@@ -50,8 +50,8 @@
   
   .newsletter-button {
     padding: 0.5rem 1rem;
-    background-color: #4299e1; /* Blue button */
-    color: #ffffff; /* White text */
+    background-color: #CF3D36; 
+    color: #ffffff;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -59,34 +59,34 @@
   }
   
   .newsletter-button:hover {
-    background-color: #3182ce; /* Darker blue on hover */
+    background-color: rgb(219, 88, 0); 
   }
   
-  /* Social Media Links */
+ 
   .social-links {
     display: flex;
     gap: 1rem;
   }
   
   .social-link {
-    color: #a0aec0; /* Light gray text */
+    color: #a0aec0; 
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .social-link:hover {
-    color: #ffffff; /* White text on hover */
+    color: #ffffff; 
   }
   
-  /* Copyright Section */
+
   .copyright-section {
-    border-top: 1px solid #4a5568; /* Dark gray border */
+    border-top: 1px solid #4a5568; 
     margin-top: 2rem;
     padding-top: 1rem;
     text-align: center;
   }
   
   .copyright-text {
-    color: #a0aec0; /* Light gray text */
+    color: #a0aec0;
     margin: 0;
   }

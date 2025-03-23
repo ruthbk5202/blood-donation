@@ -23,7 +23,7 @@
     flex-direction: row;
 }
 .about-us a:hover{
-  color:#333;
+ 
   transition: color 0.3s ease;
 }
 .donate-btn{
@@ -76,6 +76,7 @@
 
 .dropdown-item {
   position: relative; 
+  margin-right: 68px;
 }
 
 .dropdown-menu {
@@ -85,11 +86,14 @@
   background-color:#CF3D3C;
   border: 1px solid #CF3D3C;
   list-style: none;
+  border-radius: 4px;
   padding: 0.5rem 0;
   margin: 0;
-  
-  z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width:200px;
+   z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+ 
+  transition: opacity 0.1s ease, transform 0.1s ease, visibility 0.3s ease;
 }
 
 .dropdown-menu li {
@@ -116,7 +120,7 @@
  
 }
 .stories :hover{
-  color: #333;
+  
   transition: color 0.3s ease;
 }
 .resource{
@@ -126,6 +130,6 @@
  
 }
 .resource :hover{
-  color: #333;
+  
   transition: color 0.3s ease;
 }

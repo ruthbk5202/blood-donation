@@ -38,16 +38,20 @@ const DonateBlood = () => {
             <h1>Please send us your details</h1>
 
             <div className="form-group">
+              <label>Name</label>
               <input type="text" id="name" placeholder="Enter your name" />
             </div>
             <div className="form-group">
+              <label>Date of Birth</label>
               <input type="date" id="dob" placeholder="Date of Birth" />
             </div>
 
             <div className="form-group">
+              <label>Phone Number</label>
               <input type="text" id="phone" placeholder="Phone" />
             </div>
             <div className="form-group">
+              <label>Email</label>
               <input type="email" id="email" placeholder="Enter your email" />
             </div>
             <div className="form-group">

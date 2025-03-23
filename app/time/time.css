@@ -1,0 +1,111 @@
+.contact-form-container {
+  max-width: 1200px; /* Increased max-width */
+  margin: 0 auto;
+  padding: 40px; /* Increased padding */
+  font-family: Arial, sans-serif;
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd;
+  border-radius: 12px; /* Increased border-radius */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure it takes full height of the screen */
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px; /* Increased margin */
+  font-size: 28px; /* Increased font size */
+}
+
+.contact-info {
+  /* background-color: #e9e9e9; */
+  padding: 20px; /* Increased padding */
+  border-radius: 12px; /* Increased border-radius */
+  margin-bottom: 30px; /* Increased margin */
+  width: 100%;
+  max-width: 800px; /* Increased max-width */
+}
+
+.contact-info p {
+  margin: 10px 0; /* Increased margin */
+  color: #555;
+  font-size: 16px; /* Increased font size */
+}
+
+.contact-info strong {
+  color: #333;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; 
+  width: 100%;
+  max-width: 1000px; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; 
+}
+
+.form-group label {
+  margin-bottom: 10px; 
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Increased border-radius */
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px; /* Increased min-height */
+}
+
+.submit-button {
+  background-color: #CF3D36;
+  color: white;
+  padding: 15px 30px; 
+  border-radius: 6px; 
+  font-size: 18px; 
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+h2{
+  font-size: 16px;
+  font-size: bold;
+}
+.contact-nav {
+  background-color: #cf3d3c;
+  width: 100%;
+  height: 300px;
+  
+}
+.contact-nav h6{
+  display: flex;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 32px;
+ 
+
+}
