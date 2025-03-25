@@ -45,16 +45,16 @@ const Nav = () => {
                   <a href="/BOD">BOD</a>
                 </li>
                 <li>
-                  <a href="/">media</a>
+                  <a href="/media">media</a>
                 </li>
                 <li>
-                  <a href="/">Blogs</a>
+                  <a href="/blogs">Blogs</a>
                 </li>
                 <li>
-                  <a href="/">Events</a>
+                  <a href="/eventpage">Events</a>
                 </li>
                 <li>
-                  <a href="/">Newsletters</a>
+                  <a href="/newsletter">Newsletters</a>
                 </li>
               </ul>
             )}

@@ -1,0 +1,72 @@
+body{
+    font-family:  sans-serif;
+    margin: 0 0 20px;
+}
+nav{
+    background-color: #cf3d36;
+}
+h6{
+    color:white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    padding-top: 64px;
+}
+.description-of-saving p{
+    color:#524c4c;
+    font-size: 16px;
+
+
+}
+.description-of-saving div{
+    margin-bottom: 16px ;
+}
+.description-of-saving h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.saving-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    
+}
+.description-saving-children{
+    margin-bottom: 32px;
+    margin-top: 16px;
+   
+}
+.description-child p{
+    display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  color:#524c4c;
+}
+.ci-User{
+    display: flex;
+    justify-content: flex-start;
+    color:#524c4c;
+     margin-left: 32px;
+}
+.cio{
+    margin-right: 16px;
+}
+.description-saving-children h2{
+    margin-bottom: 16px;
+}
+.reference{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    color: #524c4c;
+}
+.reference h2{
+    color:black
+}
+.description p{
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}

@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    color: #333;
+}
+
+
+.board-of-directors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.board-of-directors {
+    display: flex;
+    align-items: center;
+    margin-top:32px;
+    margin-left:64px;
+ margin-right:64px; 
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    width:84%;
+    justify-content: center;
+    gap:84px;
+    border-bottom: 2px solid #ddd; 
+}
+
+.board-of-directors img {
+    width: 194px;
+    /* height: ; */ 
+    margin-right: 32px;
+    
+    
+   
+}
+
+
+.board-of-directors-content {
+    flex: 1;
+}
+
+
+.board-of-directors h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+.board-of-directors p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    max-width:996px;
+}
+nav{
+    background-color: #CF3D36;
+    
+}
+h6{
+    display: flex;
+    font-size: 32px;
+    font-weight: 500;
+    color:white;
+    text-align: center;
+    padding-top:64px;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 768px) {
+    .board-of-directors {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .board-of-directors img {
+        width: 150px;
+        /* height: 150px; */
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .board-of-directors h2 {
+        font-size: 1.3em;
+    }
+
+    .board-of-directors p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .board-of-directors img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .board-of-directors h2 {
+        font-size: 1.1em;
+    }
+
+    .board-of-directors p {
+        font-size: 0.8em;
+    }
+}

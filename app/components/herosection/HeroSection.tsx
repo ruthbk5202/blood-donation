@@ -11,6 +11,9 @@ const HeroSection = () => {
     router.push('/donateBlood');}
   const handleTimeNavigation = () => {
     router.push('/time');}
+    const handleFundraiserNavigation=() => {
+      router.push('/fundraiser');}
+    
   return (
     <div className='hero-section'>
       <div className='content-section'>
@@ -21,7 +24,7 @@ const HeroSection = () => {
         <div className='btn-section'>
           <button  onClick={handleBloodNavigation}><MdWaterDrop className='icon' />Blood</button>
           <button onClick={handleTimeNavigation}><IoTimerOutline className='icon' />Time</button>
-          <button><FaHandHoldingHeart className='icon' />Fundraiser</button>
+          <button onClick={handleFundraiserNavigation}><FaHandHoldingHeart className='icon' />Fundraiser</button>
         </div>
       </div>
       <div className='image-section'>

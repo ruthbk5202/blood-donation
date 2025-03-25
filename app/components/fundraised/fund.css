@@ -1,0 +1,9 @@
+.fund-raised-container{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    border:1px solid #ccc;
+    padding:24px;
+    position: fixed;
+    justify-content: end;
+}
