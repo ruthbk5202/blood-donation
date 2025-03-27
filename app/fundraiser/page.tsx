@@ -1,12 +1,20 @@
 import React from 'react';
 import Fund from "../components/fundraised/Fund";
+import Hero from "../components/fundraisercomponents/Hero"
 import "./fundraiser.css";
+import About from '../components/fundraisercomponents/About';
+import FundraiserDetails from '../components/fundraisercomponents/FundraiserDetails';
+import Impact from '../components/fundraisercomponents/Impact';
+import FundraisingGoals from '../components/fundraisercomponents/FundraisingGoals';
+// import Testimonials from '../components/fundraisercomponents/Testamonials';
+import Team from "../components/fundraisercomponents/Team";
+import Partners from '../components/fundraisercomponents/Partner';
 
 const Fundraiser = () => {
   return (
     <div>
-      <div className='fund-raiser-card-container'>
-        <h6>Fundraiser to Support and Manage “Ragat Chahiyo” Blood Hotline in Nepal</h6>
+      <div className='fund-raiser-container'>
+        {/* <h6>Fundraiser to Support and Manage “Ragat Chahiyo” Blood Hotline in Nepal</h6>
         
         <h1>About Hamro LifeBank</h1>
         <p>Hamro LifeBank is a social initiative for a smart, transparent, and holistic blood management service from collection to supply...</p>
@@ -41,11 +49,23 @@ const Fundraiser = () => {
         <h1>Our Team</h1>
         <p>Our team of committed hotline operators and volunteers handle thousands of calls from people searching for blood...</p>
         <img src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/hamro-lifebank/website/images/hlb-our-team-fundraise.jpg" alt="Our Team"/>
-      </div>
+      </div> */} 
 
+       {/* <Hero/> */}
+      
+        <h6>Fundraiser to support and Manage "Ragat Chaiyo" Blood Hotline in Nepal</h6>
+     
+       <About/>
+       <FundraiserDetails/>
+       <Impact/>
+      <FundraisingGoals/>
+      {/* <Testimonials/> */}
+      <Team/>
+      <Partners/>
       <div>
-        <Fund />
+        {/* <Fund /> */}
       </div>
+    </div>
     </div>
   );
 };

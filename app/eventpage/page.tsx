@@ -10,7 +10,7 @@ const Blogs = () => {
             paragraph: "Hamro LifeBank and Verisk Nepal organized a Smart Blood Donation Drive, a one-day blood donation event in partnership with Labim Mall and Grande International Hospital. Out of 80 registrants, 74 were eligible to donate blood, while the remaining individuals were ineligible due to health issues and other reasons. ",
             name: "Samjana Karki",
             date: "May 15",
-            link:"/celebrateandsave"
+            link:"/giftoflife"
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ const Blogs = () => {
             paragraph: "Hamro Life Bank partnered with Omnicom Media Group to organize a smart blood donation event at their premises. In collaboration with Metro Kathmandu Hospital, we successfully collected 22 pints of blood, a life-saving contribution that has the potential to save 66 lives!",
             name: "Samjana Karki",
             date: "April 22",
-               link:"/saving"
+               link:"/omnicom"
         },
         {
             id: 3,

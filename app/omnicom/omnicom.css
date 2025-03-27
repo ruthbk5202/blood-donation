@@ -1,0 +1,49 @@
+nav{
+    background-color: #cf3d36;
+}
+h6{
+    color:white;
+    text-align: center;
+    padding-top: 64px;
+    font-weight: 500;
+    font-size: 32px;
+
+}
+.omnicom-container{
+    display: flex;
+    flex-direction: column;
+  margin: 32px;
+    width: 80%;
+    padding: 20px;
+    
+}
+.omnicom-container{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 16px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.description h2{
+    font-size: 16px;
+    font-size: medium;
+    font-weight: 400;
+    color: black;
+}
+.description p{
+    margin-bottom: 16px;
+    color: #524c4c;
+}
+.ci-Useri{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color:#524c4c;
+     /* margin-right: 32px;  */
+}
+.ci-Useri p{
+    color:#524c4c;
+}

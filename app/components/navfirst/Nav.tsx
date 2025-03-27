@@ -9,6 +9,7 @@ import Link from "next/link";
 const Nav = () => {
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [resourceDropdown, setResourceDropdown] = useState(false);
+  const [ourWorkDropdown, setourWorkDropdown] = useState(false); 
   const router = useRouter();
   const handleNavigateToDonate = () => {
     router.push("/donateBlood");
@@ -56,6 +57,31 @@ const Nav = () => {
                 <li>
                   <a href="/newsletter">Newsletters</a>
                 </li>
+              </ul>
+            )}
+          </div>
+          <div
+            className="dropdown-item"
+            onMouseEnter={() => setourWorkDropdown(true)}
+            onMouseLeave={() => setourWorkDropdown(false)}
+          >
+
+            <div className="our-work">
+              <a href="/">Our Work</a>
+              <RiArrowDropDownLine className="dropdown-icon" />
+            </div>
+            {ourWorkDropdown && (
+              <ul className="dropdown-menu">
+                <li>
+                  <a href="/">What we do</a>
+                </li>
+                <li>
+                  <a href="/">Partners</a>
+                </li>
+                <li>
+                  <a href="/ragatchihiyohotline">Ragat Chihiyo Hotline</a>
+                </li>
+              
               </ul>
             )}
           </div>

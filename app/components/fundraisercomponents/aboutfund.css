@@ -1,0 +1,17 @@
+.container h2{
+    color:#cf3d36;
+}
+.about-content{
+   margin-bottom: 16px;
+}
+.about-content p{
+    margin-bottom: 16px;
+}
+.about-content h3{
+    font-size: 14px;
+    font-weight: bold;
+    color: #cf3d36;
+}
+.mission-list li{
+    list-style-type:circle;
+}

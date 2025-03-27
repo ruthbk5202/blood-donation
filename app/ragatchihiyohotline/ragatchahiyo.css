@@ -1,0 +1,165 @@
+.ragat-chahiyo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 32px;
+}
+.ragat-chahiyo-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.piline {
+  height: 24px;
+  color: #cf3d36;
+  width: 32px;
+}
+.cidroplet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.blood-request-today {
+  display: flex;
+  flex-direction: row;
+  background-color: #b4ebe6;
+  width: 1100px;
+  height: 124px;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  border-radius: 8px;
+}
+.blood-request-today .blood-req {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  height: 64px;
+  color: #cf3d36;
+}
+.blood-request-today h2 {
+  font-weight: 64px;
+  color: black;
+  font-size: 20;
+}
+.ci {
+  color: #cf3d36;
+  width: 32px;
+  height: 32px;
+}
+.cidroplet {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.blood-request-today h6 {
+  font-size: 24px;
+}
+.ragat-chaihiyo-img {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+}
+.ragat-chahiyo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1110px;
+}
+.description-part h6 {
+  font-size: 32px;
+  font-weight: bold;
+  
+}
+.partners-logo {
+  display: flex;
+  flex-direction: row;
+  height:300px;
+  gap: 64px; 
+  justify-content: center;
+  
+ 
+ 
+}
+.partners-logo img {
+  width: fit-content;
+  border: 1px solid rgb(244, 238, 238);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  width: 168px;
+  border-radius: 4px;
+ 
+  padding: 24px;
+}
+.help-line-map{
+    display: flex;
+   
+    align-items: center;
+    /* height: 300px; */
+    /* margin-top: 32px; */
+    width: 1110px;
+    gap:32px;
+   
+   
+}
+.help-line-item img{
+    display: flex;
+    width:60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.help-line-item{
+    display: flex;
+    flex-direction: column;
+    width: 404px;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding:24px;
+     
+}
+.help-line-map :hover{
+    background-color: #cf3d36;
+    color:white;
+    transition:  0.2s ease, box-shadow 0.1s ease;
+}
+.help-line-item img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description-helpline{
+display: flex;
+flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.ragat-chahiyo-container h6{
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+}
+.help-line img{
+    display: flex;
+    width:30px;
+    height:30px;
+    margin: 32px;
+    justify-content: center;
+    align-items: center;
+}
