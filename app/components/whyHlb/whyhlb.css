@@ -6,14 +6,14 @@
     gap: 2rem; 
     align-items: center; 
     padding: 2rem; 
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .svg-hlb img {
     width: 100%; 
-    height: auto; 
- 
+    height: auto;
+    max-width: 500px;
 }
 
 .why-hlb,
@@ -36,15 +36,80 @@
     margin-bottom: 1.5rem; 
 }
 
-
 .what-we-do {
     grid-column: span 1;
-    text-align: center;
-  
+    text-align: left;
     padding: 2rem; 
+}
+
+.what-we-do-map-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px;
+    height:218px;
+    gap:1px;
    
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    /* margin-bottom: 1rem; */
+    color: #333;
+    text-align: center;
+}
+
+.card p.card-description {
+    text-align: center;
+    /* margin-bottom: 1rem; */
+    color: #666;
+    /* line-height: 1.5; */
+}
+
+/* .card p.card-number {
+    font-weight: bold;
+    color: #e63946;
+    text-align: center;
+    margin-top: auto;
+} */
+
+.what-we-do-map-container .card:nth-child(2) {
+    position: relative;
+    padding:3px;
+    
+    top:142px;
+  }
+.what-we-do-map-container .card:nth-child(3) {
+    margin-top: 0rem;
+}
+@media (max-width: 900px) {
+    .what-we-do-map-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 768px) {
     .grid-hlb {
@@ -62,7 +127,11 @@
         font-size: 1rem; 
     }
 
-    .what-we-do {
-        grid-column: span 1;
+    .what-we-do-map-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .svg-hlb {
+        order: -1;
     }
 }

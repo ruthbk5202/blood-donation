@@ -9,7 +9,7 @@ import Link from "next/link";
 const Nav = () => {
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [resourceDropdown, setResourceDropdown] = useState(false);
-  const [ourWorkDropdown, setourWorkDropdown] = useState(false); 
+  const [ourWorkDropdown, setourWorkDropdown] = useState(false);
   const router = useRouter();
   const handleNavigateToDonate = () => {
     router.push("/donateBlood");
@@ -17,6 +17,54 @@ const Nav = () => {
   const handleNavigateToRequestBlood = () => {
     router.push("/requestBloodForm");
   };
+
+  const scrollToSection = (sectionId: string) => {
+    if (window.location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+     } else {
+      router.push("/");
+
+    
+     }
+  };
+  const scrollToWhyHLB= (sectionId: string) => {
+    if (window.location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+     } else {
+      router.push("/");
+
+    
+     }
+  };
+  const scrollToWhatWeDo= (sectionId: string) => {
+    if (window.location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+     } else {
+      router.push("/");
+
+    
+     }
+  };
+  const scrollToPartnerSection=(sectionId:string)=>{
+    if(window.location.pathname==='/'){
+      const element = document.getElementById(sectionId);
+      if (element){
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+  const handleNavigateToLogin=()=>{
+    router.push("/login");
+  }
 
   return (
     <nav className="navbar">
@@ -28,6 +76,13 @@ const Nav = () => {
         </div>
 
         <div className="drop-down">
+        <a 
+        href="#why-hlb-section"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollToWhyHLB("why-hlb-section");
+        }}
+        >Why HLB</a>
           <div
             className="dropdown-item"
             onMouseEnter={() => setAboutDropdown(true)}
@@ -40,7 +95,15 @@ const Nav = () => {
             {aboutDropdown && (
               <ul className="dropdown-menu">
                 <li>
-                  <a href="/">Team</a>
+                  <a
+                    href="#team-section"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection("team-section");
+                    }}
+                  >
+                    Team
+                  </a>
                 </li>
                 <li>
                   <a href="/BOD">BOD</a>
@@ -65,7 +128,6 @@ const Nav = () => {
             onMouseEnter={() => setourWorkDropdown(true)}
             onMouseLeave={() => setourWorkDropdown(false)}
           >
-
             <div className="our-work">
               <a href="/">Our Work</a>
               <RiArrowDropDownLine className="dropdown-icon" />
@@ -73,15 +135,23 @@ const Nav = () => {
             {ourWorkDropdown && (
               <ul className="dropdown-menu">
                 <li>
-                  <a href="/">What we do</a>
+                  <a href="#what-we-do-id" 
+                  onClick={(e)=>{e.preventDefault();
+                    scrollToWhatWeDo("what-we-do-id");
+                  }}
+                  >What we do</a>
                 </li>
                 <li>
-                  <a href="/">Partners</a>
+                  <a href="#partner-id"
+                  onClick={(e)=>{
+                    e.preventDefault();
+                    scrollToPartnerSection("partner-id");
+                  }}
+                  >Partners</a>
                 </li>
                 <li>
                   <a href="/ragatchihiyohotline">Ragat Chihiyo Hotline</a>
                 </li>
-              
               </ul>
             )}
           </div>
@@ -91,7 +161,7 @@ const Nav = () => {
               <a href="/bloodstories">Stories </a>
             </div>
           </div>
-           
+
           <div
             className="dropdown-item"
             onMouseEnter={() => setResourceDropdown(true)}
@@ -131,6 +201,12 @@ const Nav = () => {
               onClick={handleNavigateToRequestBlood}
             >
               Request Blood
+            </button>
+            <button
+              className="request-btn"
+              onClick={handleNavigateToLogin}
+            >
+              Login
             </button>
           </div>
         </div>
