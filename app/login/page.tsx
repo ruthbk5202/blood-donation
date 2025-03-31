@@ -78,11 +78,7 @@ const LoginPage = () => {
             </button>
             
             <div className="login-header">
-              {/* <img 
-                src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/esatya/hlb-navbar-logo.pn" 
-                alt="Blood Donation Logo" 
-                className="login-logo"
-              /> */}
+             
               <h2 className="login-title">Blood Donation Portal</h2>
               <p className="login-subtitle">Sign in to your account</p>
             </div>
