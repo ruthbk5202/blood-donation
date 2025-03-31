@@ -23,9 +23,11 @@ const teamMembers = [
 ];
 
 const AboutUs = () => {
+ 
   return (
-    <div className="root">
+    <div className="root about">
       <div className="container">
+        <div id="team-section">
         <h1 className="section-title">Meet Our Team</h1>
         <div className="team-members">
           {teamMembers.map((member) => (
@@ -39,6 +41,7 @@ const AboutUs = () => {
               <p className="member-description">{member.description}</p>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </div>

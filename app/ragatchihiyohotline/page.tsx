@@ -6,6 +6,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { GiAlarmClock } from "react-icons/gi";
 
 import "./ragatchahiyo.css";
+import { BiParagraph } from "react-icons/bi";
 
 const RagatChahiyoHotline = () => {
   const partners=[
@@ -52,15 +53,29 @@ const RagatChahiyoHotline = () => {
       header:"Viber",
       paragraph:"People in need of blood  can also share their blood needs via viber. We are introducing ragat chahiyo hotline chatbot vary soon. ",
     },
+    
+    
+    {
+      id:7,
+      image:"	https://rumsan.nyc3.cdn.digitaloceanspaces.com/hamro-lifebank/website/images/twitter-hlb.png",
+      header:"Twitter",
+      paragraph:"People in need of blood can also share their blood needs via twitter. we are introducing ragat chahiyo hotline bot very soon."
+    },
+    {
+      id:8,
+      image:"https://hamrolifebank.com/img/icon/facebook.png",
+      header:"Facebook",
+      paragraph:"People in need of blood can also share their blood needs via facebook. We are introducing ragat chahiyo hotline bot very soon."
+    }
   ]
   return (
     <div>
       <div className="ragat-chahiyo-container">
-        <div>
+        <div >
           <div className="ragat-chahiyo-nav">
             <nav>
               <svg width="24" height="24" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" fill="blue">
+                <circle cx="12" cy="12" r="10" fill="#cf3d36">
                   <animate
                     attributeName="opacity"
                     values="1;0.5;1"
@@ -70,37 +85,43 @@ const RagatChahiyoHotline = () => {
                 </circle>
               </svg>
               <h6>Ragat Chahiyo Hotline</h6>{" "}
-              <PiLineVerticalLight className="piline" /> <h6> Mar 26, 2025</h6>{" "}
-              <PiLineVerticalLight className="piline" /> Blood Search managed
-              till date
-              <MdOutlineDoubleArrow /> 10524
+              <PiLineVerticalLight className="piline" /> <h1> Mar 26, 2025</h1>{" "}
+              <PiLineVerticalLight className="piline" /> {" "}<p>Blood Search managed
+              till date</p>{""}
+              <MdOutlineDoubleArrow className="arrow" /><p> 10524</p> 
             </nav>
           </div>
           <div className="blood-request-today">
+
             <div className="cidroplet">
-              <CiDroplet className="ci" />
+              <img src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/esatya/blood-drop.png"></img>
+             
               <h2>Blood Request Today</h2>
               <h6>25</h6>
             </div>
             <PiLineVerticalLight className="blood-req" />
             <div className="cidroplet">
-              <FaCheckCircle className="ci" />
+              <img src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/esatya/check.png"></img>
               <h2>Managed</h2>
               <h6>24</h6>
             </div>
             <PiLineVerticalLight className="blood-req" />
             <div className="cidroplet">
-              <GiAlarmClock className="ci" />
+              <img src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/rumsan-group/hotline-pending.png"></img>
               <h2>Pending</h2>
               <h6>1</h6>
             </div>
           </div>
         </div>
-        <div>
+        <div className="no-blood-req">
+          <p>There is currently no blood request at this time</p>
+        </div>
+        <div className="ragat-chahiyo-call">
           <img
             src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/rumsan-test/ragat-chahiyo-hotline.png"
-            className="ragat-chaihiyo-img"
+           
           ></img>
+          <p>Ragat Chahiyo</p>
         </div>
         <div className="ragat-chahiyo-grid">
           <div className="description-part">
@@ -135,7 +156,7 @@ const RagatChahiyoHotline = () => {
        
         </div>
         <div className="ragat-chahiyo-contact-section">
-          <div className="help-line">
+          <div>
             <img src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/hamro-lifebank/website/images/question-1.png"></img>
           </div>
           <div >
@@ -148,7 +169,7 @@ const RagatChahiyoHotline = () => {
       <div key={index.id} className="help-line-item">
         <img src={index.image}></img>
         <div className="description-helpline">
-          <h6>{index.header}</h6>
+          <h5>{index.header}</h5>
           <p>{index.paragraph}</p>
         </div>
       </div>))
