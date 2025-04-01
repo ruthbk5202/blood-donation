@@ -6,21 +6,24 @@ import HeroSection from "../components/herosection/HeroSection";
 import WhyHlb from "../components/whyHlb/WhyHlb";
 import Team from "../components/team/Team";
 import Events from "../components/Events/Events";
+
+
 import Partners from "../components/Partners/Partner";
+ 
 
 
-const Home = () => {
+function Home() {
   return (
     <div>
-   
+
       <HeroSection />
-     
+
       <WhyHlb />
       <Team />
-      <Partners/>
+      <Partners />
       <Events />
-      
+
     </div>
   );
-};
+}
 export default Home;

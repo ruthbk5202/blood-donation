@@ -1,16 +1,18 @@
-export default function AdminLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import React from "react";
+import AdminNavbar from "./components/navbar/AdminNavbar";
+import AdminSidebar from "./components/sidebar/AdminSidebar";
+
+const AdminLayout = ({ children }: { children: React.ReactNode }) => {
+  console.log("content:", children);
   return (
-    <div className="min-h-screen bg-gray-100">
-      <nav className="bg-blue-600 p-4 text-white">
-        <h1 className="text-xl font-bold">Admin Panel</h1>
-      </nav>
-      <div className="p-4">
-        {children}
+    <div>
+      <AdminNavbar />
+      <div>
+      <AdminSidebar />
+      <main>{children}</main>
       </div>
     </div>
   );
-}
+};
+
+export default AdminLayout;
