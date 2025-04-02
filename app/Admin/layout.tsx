@@ -1,18 +1,21 @@
-import React from "react";
-import AdminNavbar from "./components/navbar/AdminNavbar";
-import AdminSidebar from "./components/sidebar/AdminSidebar";
+"use client";
+import type { ReactNode } from "react";
+import React, { Children, useState } from 'react';
+import AdminNavbar from "../components/admin/Navbar/AdminNavbar";
+import AdminSideNavbar from "../components/admin/SideNavbar/AdminSideNavbar";
+interface AdminLayoutProps {
+  children: ReactNode
+}
+const AdminLayout =({children}:AdminLayoutProps) => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // or true if you want it open by default
 
-const AdminLayout = ({ children }: { children: React.ReactNode }) => {
-  console.log("content:", children);
   return (
     <div>
       <AdminNavbar />
-      <div>
-      <AdminSidebar />
-      <main>{children}</main>
-      </div>
+      <AdminSideNavbar isOpen={isSidebarOpen} />
+       {children}
     </div>
-  );
+  )
 };
 
 export default AdminLayout;

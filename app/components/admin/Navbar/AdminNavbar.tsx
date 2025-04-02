@@ -1,18 +1,10 @@
 "use client";
-import {FiBell } from 'react-icons/fi';
+import { FiBell } from 'react-icons/fi';
 import { IoReorderThreeOutline } from "react-icons/io5";
-// import { Link } from 'react-router-dom';
-import {useRouter} from "next/navigation";
 import Link from "next/link";
-
-import styles from '../admin.module.css';
+import styles from '../amin.module.css';
 
 export default function AdminNavbar() {
-  // const router=useRouter()
-  // const handlehomedashboard = () => {
-
-  //   router.push('Admin/homedashboard');
-  // };
   return (
     <header className={styles.navbar}>
       <div className={styles.navLeft}>
@@ -21,9 +13,9 @@ export default function AdminNavbar() {
         </button>
       </div>
       <div className={styles.navCenter}>
+        {/* All links should start with / */}
         <Link className={styles.navBtn} href="/admin/home">Home</Link>
-      {/* <button className={styles.navBtn}>Settings</button> */}
-      <Link href="admin/settings">Settings</Link>
+        <Link className={styles.navBtn} href="/admin/settings">Settings</Link>
         <button className={styles.navBtn}>Download Demo APK</button>
         <button className={styles.navBtn}>Read Documentation</button>
       </div>

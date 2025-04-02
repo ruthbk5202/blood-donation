@@ -10,7 +10,7 @@ export default function LayoutHandler({
   children: React.ReactNode 
 }) {
   const pathname = usePathname();
-  const isAdminRoute = pathname?.startsWith('/admin');
+  const isAdminRoute = pathname?.startsWith('/(admin)');
 
   return (
     <>
